@@ -1,0 +1,51 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background: #f0f8ff;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  color: #2c3e50;
+}
+.controls {
+  margin: 20px 0;
+}
+.controls button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#output {
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  display: block;
+}
+.device {
+  margin: 30px auto;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.led {
+  width: 30px;
+  height: 30px;
+  background: gray;
+  border-radius: 50%;
+  margin: 20px auto;
+  transition: background 0.3s;
+}
+.led.on { background: green; }
+.servo {
+  width: 100px;
+  height: 20px;
+  background: #4CAF50;
+  margin: 20px auto;
+  transform-origin: left center;
+  transition: transform 0.5s;
+}
+.label {
+  margin-top: 10px;
+  font-weight: bold;
+}

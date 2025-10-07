@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Болашақты қолмен және дауыспен басқару</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>💡 Болашақты қолмен және дауыспен басқару</h1>
+  
+  <div class="controls">
+    <button id="startCamera">Камераны қосу</button>
+    <button id="startMic">Дауысты тыңдау</button>
+  </div>
+
+  <video id="video" playsinline style="display:none"></video>
+  <canvas id="output" width="640" height="480"></canvas>
+
+  <div class="device">
+    <div class="led" id="led">LED</div>
+    <div class="servo" id="servo">Қол</div>
+    <div class="label">Ақылды құрылғы</div>
+  </div>
+
+  <!-- TensorFlow.js + MediaPipe Hands -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+  <script src="app.js"></script>
+</body>
+</html>
